@@ -96,13 +96,12 @@
  <!-- Main JS -->
  <script src="js/main.js"></script>
 
-<script type="text/javascript">
-	$(function(){
-		$("#fh5co-header").load("header.html");
-		$("#fh5co-main").load("./item_category/life/electronic_mat.html");
-		$("#fh5co-footer").load("footer.html");
-		
-		});
+<script>
+includeHTML( function () {
+  includeRouter( function () {
+    // do something in the future
+  });
+});
 </script>
 
 
