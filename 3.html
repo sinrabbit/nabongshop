@@ -29,6 +29,10 @@
  <script src="js/respond.min.js"></script>
  <![endif]-->
  <link href='https://fonts.googleapis.com/css?family=Jua' rel='stylesheet'>
+ 
+ <script src="js/includeHTML.js"></script>
+ <script src="js/includeRouter.js"></script>
+  
   <style>
     .btn{
       text-decoration: none;
@@ -68,21 +72,17 @@
  </head>
  <body>
 
- <header id="fh5co-header" role="banner">
-  <div class="container">
-   <div class="row">	<center><a href="index.html"><h1>NANA SHOP </h1></a></center>   </div><ul class="nav nav-pills"><li role='presentation'><a href='index.html'>전기장판/매트</a></li><li role='presentation'><a href='2.html'>내셔널지오그래픽 뽀글이</a></li><li role='presentation' class='active'><a href='3.html'>건식좌욕기</a></li></ul>
-  </div> 
-</header>
+<header  id="fh5co-header" role="banner"></header>
  <!-- END .header -->
- 
- 
- <div id="fh5co-main">
-  <div class="container">
 
-   <div class="row">
 
-        <div id="fh5co-board" data-columns>      
-	
+
+<div id="fh5co-main">
+<div class="container">
+	<div class="row">
+		<div id="fh5co-board" data-columns>
+
+
 
 
 
@@ -359,26 +359,17 @@
 </div>
 
 
+		</div>
+	</div>
+</div>
+</div>
 
-<!--  <div class='item'> <div class='animate-box'> <a href=2.html title="" target= "_blank"><img src="img/next.jpg" alt = "다음 페이지"></a> </div> </div>           -->
-	   </div>
-        </div>
-       </div>
- </div>
-
- <footer id="fh5co-footer">
-  
-  <div class="container">
-   <div class="row row-padded">
-    <div class="col-md-12 text-center">
-    <img src="img/cou.jpg" alt=""><p><small>nanashop Company. All Rights Reserved. nanashopo@gmail.com</small></p></div>
-   </div>
-  </div>
- </footer>
+	
+	<footer id="fh5co-footer"></footer>
 
 
- <!-- jQuery -->
- <script src="js/jquery.min.js"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
  <!-- jQuery Easing -->
  <script src="js/jquery.easing.1.3.js"></script>
  <!-- Bootstrap -->
@@ -392,8 +383,13 @@
  <!-- Main JS -->
  <script src="js/main.js"></script>
 
- 
+<script type="text/javascript">
+$(function(){
+	$("#fh5co-header").load("header.html");
+	$("#fh5co-footer").load("footer.html");
+	});
+</script>
 
- 
- </body>
+
+</body>
 </html>
