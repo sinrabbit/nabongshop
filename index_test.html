@@ -72,13 +72,13 @@
  </head>
  <body>
 
-<header  id="fh5co-header" role="banner" include-html="header.html"></header>
+<header  id="fh5co-header" role="banner"></header>
  <!-- END .header -->
 
 
 	<article include-html="item_category/life/electronic_mat.html"></article>
 	
-	<footer id="fh5co-footer" include-html="footer.html"></footer>
+	<footer id="fh5co-footer"></footer>
 
 
 <!-- jQuery -->
@@ -96,12 +96,11 @@
  <!-- Main JS -->
  <script src="js/main.js"></script>
 
-<script>
-includeHTML( function () {
-  includeRouter( function () {
-    // do something in the future
-  });
-});
+<script type="text/javascript">
+$(function(){
+	$("#fh5co-header").load("header.html");
+	$("#fh5co-footer").load("footer.html");
+	});
 </script>
 
 
